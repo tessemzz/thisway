@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This Way</title>
+    <link type="text/css" rel="stylesheet" href="thisway.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <header id="masthead" class="site-header">
+      <h1 class="page-title">
+        <center>
+          →→→→→→→→→→→→→→→→→→→→→→→→→→→→<br/>
+          →→→→→→→→→→→→THISWAY→→→→→→→→→→→→<br/>
+          →→→→→→→→→→→→→→→→→→→→→→→→→→→→<br/>
+        </center>
+      </h1>
+      <div class="identity">
+        <div class="trigger close-trigger mobile-only">
+          <div class="menu">
+            <div class="bar">
+            </div>
+            <div class="bar">
+            </div>
+            <div class="bar">
+            </div>
+          </div>
+        </div>
+        <a class="logo" href="https://niltonclothing.com">
+          <span class="icon-nilton">
+          </span>
+        </a>
+        <div class="trigger cart-trigger">
+          <div class="menu">
+            <span class="icon-basket">
+            </span>
+          </div>
+        </div>
+      </div>
+      <nav id="site-navigation" class="large-only main-navigation" role="navigation">
+        <ul class="navigation-menu">
+          <li>
+            <a href="">
+              <div class="tooltip" onmouseover="showToolTip(1);" onmouseout="hideToolTip(1);">
+                Summer
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="tooltip" onmouseover="showToolTip(2);" onmouseout="hideToolTip(2);">
+                Spring
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="tooltip" onmouseover="showToolTip(3);" onmouseout="hideToolTip(3);">
+                Winter
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="tooltip" onmouseover="showToolTip(4);" onmouseout="hideToolTip(4);">
+                Fall
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation-menu" id="tooltip-list">
+          <li>
+            <div class="tooltipdiv">
+              <p class="tooltiptext" id="tooltiptext1">Summer Collection: <i>Description</i></p>
+            </div>
+          </li>
+          <li>
+            <div class="tooltipdiv">
+              <p class="tooltiptext" id="tooltiptext2">Spring Collection: <i>Description</i></p>
+            </div>
+          </li>
+          <li>
+            <div class="tooltipdiv">
+              <p class="tooltiptext" id="tooltiptext3">Winter Collection: <i>Description</i></p>
+            </div>
+          </li>
+          <li>
+            <div class="tooltipdiv">
+              <p class="tooltiptext" id="tooltiptext4">Fall Collection: <i>Description</i></p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script>
+      function showToolTip(num) {
+        var elementName = "tooltiptext" + num;
+        var tooltip = document.getElementById(elementName);
+        tooltip.style.visibility = "visible";
+      }
+      function hideToolTip(num) {
+        var elementName = "tooltiptext" + num;
+        var tooltip = document.getElementById(elementName);
+        tooltip.style.visibility = "hidden";
+      }
+    </script>
+  </body>
+</html>
