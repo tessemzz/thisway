@@ -15,68 +15,82 @@
           →→→→→→→→→→→→→→→→→→→→→→→→→→→→<br/>
         </center>
       </h1>
-      <table class="menu">
-        <tr>
-          <td class="sidebar">
+      <div class="identity">
+        <div class="trigger close-trigger mobile-only">
+          <div class="menu">
+            <div class="bar">
+            </div>
+            <div class="bar">
+            </div>
+            <div class="bar">
+            </div>
+          </div>
+        </div>
+        <a class="logo" href="https://niltonclothing.com">
+          <span class="icon-nilton">
+          </span>
+        </a>
+        <div class="trigger cart-trigger">
+          <div class="menu">
+            <span class="icon-basket">
+            </span>
+          </div>
+        </div>
+      </div>
+      <nav id="site-navigation" class="large-only main-navigation" role="navigation">
+        <ul class="navigation-menu">
+          <li>
             <a href="">
               <div class="tooltip" onmouseover="showToolTip(1);" onmouseout="hideToolTip(1);">
-                <center>Summer</center>
+                Summer
               </div>
             </a>
-          </td>
-          <td class="sidebar">
+          </li>
+          <li>
             <a href="">
               <div class="tooltip" onmouseover="showToolTip(2);" onmouseout="hideToolTip(2);">
-                <center>Spring</center>
+                Spring
               </div>
             </a>
-          </td>
-          <td class="sidebar">
+          </li>
+          <li>
             <a href="">
               <div class="tooltip" onmouseover="showToolTip(3);" onmouseout="hideToolTip(3);">
-                <center>Winter</center>
+                Winter
               </div>
             </a>
-          </td>
-          <td class="sidebar">
+          </li>
+          <li>
             <a href="">
               <div class="tooltip" onmouseover="showToolTip(4);" onmouseout="hideToolTip(4);">
-                <center>Fall</center>
+                Fall
               </div>
             </a>
-          </td>
-        </tr>
-      </table>
-      <table class="tooltipmenu">
-        <tr>
-          <td>
+          </li>
+        </ul>
+        <ul id="tooltip-list">
+          <li>
             <div class="tooltipdiv">
               <p class="tooltiptext" id="tooltiptext1">Summer Collection: <i>Description</i></p>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
+          </li>
+          <li>
             <div class="tooltipdiv">
               <p class="tooltiptext" id="tooltiptext2">Spring Collection: <i>Description</i></p>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
+          </li>
+          <li>
             <div class="tooltipdiv">
               <p class="tooltiptext" id="tooltiptext3">Winter Collection: <i>Description</i></p>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
+          </li>
+          <li>
             <div class="tooltipdiv">
               <p class="tooltiptext" id="tooltiptext4">Fall Collection: <i>Description</i></p>
             </div>
-          </td>
-        </tr>
-      </table>
+          </li>
+        </ul>
+      </nav>
     </header>
     <script>
       function showToolTip(num) {

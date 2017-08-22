@@ -1,65 +1,42 @@
-ul.navigation-menu {
-  position: fixed; /* Stay in place */
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-left: 10px;
-  height: 100%;
-  width: 5%;
-  top: 0%;
-  list-style-type: none;
-  font-family: 'Open Sans', sans-serif;
-  color: #888b91;
-  z-index: 1;
+html, body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 h1 {
   font-family: 'Lato', sans-serif;
 }
-li {
-  padding-bottom: 150px;
-  transform: rotate(-180deg);
-  writing-mode: tb-rl;
-}
-
 a {
   text-decoration:  none;
   color: #888b91;
 }
 p {
   white-space: nowrap;
-  border-style: solid;
   border-radius: 10px;
   padding: 2px;
   background-color:gray;
   color: white;
 }
-
-/**/
-#tooltip-list
-{
-  left: 6%;
-  overflow-x: visible;
+.menu{
+  border-collapse: separate;
+  border-spacing: 5em 0em;
+  margin-top: 19%;
+  margin-left: -16%;
+  transform: rotate(-90deg);
 }
-.tooltip {
-  font-size: 20px;
-  z-index: 99;
+.tooltipmenu {
+  border-collapse: separate;
+  border-spacing: 5em 0em;
+  margin-top: 19%;
+  margin-left: -16%;
+}
+td {
+  height: 10%;  
+}
+tr{
+}
+.sidebar {
 }
 .tooltiptext {
-  font-size: 12px;
-  position: absolute;
-  transform: rotate(90deg);
-  right: 400%;  
   visibility: visible;
-  cursor: default;
-}
-#tooltiptext1 {
-  bottom: 67%;
-}
-#tooltiptext2 {
-  bottom: 117%;
-}
-#tooltiptext3 {
-  bottom: 159%;
-}
-#tooltiptext4 {
-  bottom: 195%;
 }
