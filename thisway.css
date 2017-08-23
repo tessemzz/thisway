@@ -1,0 +1,106 @@
+html, body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+  font-family: 'Lato', sans-serif;
+}
+
+.menu {
+  position: fixed;
+  top: 20%;
+  left: -1.2%;
+}
+td {
+  padding-bottom: 9em;
+}
+a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #888b91;
+  font-size: 16px;
+}
+
+.animation1 {
+  animation-name: summer;
+  animation-duration: 3s;
+  animation-iteration-count:infinite;
+}
+.animation2 {
+  animation-name: spring;
+  animation-duration: 3s;
+  animation-iteration-count:infinite;
+}
+.animation3 {
+  animation-name: winter;
+  animation-duration: 3s;
+  animation-iteration-count:infinite;
+}
+.animation4 {
+  animation-name: fall;
+  animation-duration: 3s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes summer {
+  0%   {color:#ffab9a;}
+  14%  {color:#ffb400}
+  28%  {color:#00e2ff;}
+  56%  {color:#00e8a0;}
+  84%  {color:#00e2ff;}
+  70%  {color:#ffb400}
+  100% {color:#ffab9a;}
+}
+@keyframes spring {
+  0%   {color:#BF9BDE;}
+  14%  {color:#74D1EA}
+  28%  {color:yellowgreen;}
+  56%  {color:green;}
+  84%  {color:yellowgreen;}
+  70%  {color:#74D1EA}
+  100% {color:#BF9BDE;}
+}
+@keyframes winter {
+  0%   {color:#04669b;}
+  14%  {color:#248dc5}
+  28%  {color:#5aa8d2;}
+  56%  {color:#003cff;}
+  84%  {color:#5aa8d2;}
+  70%  {color:#248dc5}
+  100% {color:#04669b;}
+}
+@keyframes fall {
+  0%   {color:#d4851c;}
+  14%  {color:#ff6804}
+  28%  {color:#d83000;}
+  56%  {color:#a32a2a;}
+  84%  {color:#d83000;}
+  70%  {color:#ff6804}
+  100% {color:#d4851c;}
+}
+
+.menuitem {
+  transform: rotate(-90deg);    
+  border-bottom-style: ridge;
+  border-bottom-color: lightsteelblue;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-width: 1px;
+  padding-bottom: 2px;
+}
+
+.tooltipitem {
+  visibility: hidden;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 11px;
+  background-color: darkgray;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: darkgray;
+  border-left-width: 7px;
+  border-bottom-width: 7px;
+  border-top-width: 7px;
+  border-right-width: 7px;
+}
