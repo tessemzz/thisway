@@ -81,7 +81,13 @@ a {
 }
 
 .menuitem {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg);    
+  border-bottom-style: ridge;
+  border-bottom-color: lightsteelblue;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-width: 1px;
+  padding-bottom: 2px;
 }
 
 .tooltipitem {
