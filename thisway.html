@@ -8,86 +8,53 @@
   </head>
   <body>
     <header id="masthead" class="site-header">
-      <h1 class="page-title">
-        <center>
-          →→→→→→→→→→→→→→→→→→→→→→→→→→→→<br/>
-          →→→→→→→→→→→→THISWAY→→→→→→→→→→→→<br/>
-          →→→→→→→→→→→→→→→→→→→→→→→→→→→→<br/>
-        </center>
-      </h1>
-      <table class="menu">
-        <tr>
-          <td class="sidebar">
-            <a href="">
-              <div class="tooltip" onmouseover="showToolTip(1);" onmouseout="hideToolTip(1);">
-                <center>Summer</center>
-              </div>
-            </a>
-          </td>
-          <td class="sidebar">
-            <a href="">
-              <div class="tooltip" onmouseover="showToolTip(2);" onmouseout="hideToolTip(2);">
-                <center>Spring</center>
-              </div>
-            </a>
-          </td>
-          <td class="sidebar">
-            <a href="">
-              <div class="tooltip" onmouseover="showToolTip(3);" onmouseout="hideToolTip(3);">
-                <center>Winter</center>
-              </div>
-            </a>
-          </td>
-          <td class="sidebar">
-            <a href="">
-              <div class="tooltip" onmouseover="showToolTip(4);" onmouseout="hideToolTip(4);">
-                <center>Fall</center>
-              </div>
-            </a>
-          </td>
-        </tr>
-      </table>
-      <table class="tooltipmenu">
-        <tr>
-          <td>
-            <div class="tooltipdiv">
-              <p class="tooltiptext" id="tooltiptext1">Summer Collection: <i>Description</i></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="tooltipdiv">
-              <p class="tooltiptext" id="tooltiptext2">Spring Collection: <i>Description</i></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="tooltipdiv">
-              <p class="tooltiptext" id="tooltiptext3">Winter Collection: <i>Description</i></p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="tooltipdiv">
-              <p class="tooltiptext" id="tooltiptext4">Fall Collection: <i>Description</i></p>
-            </div>
-          </td>
-        </tr>
-      </table>
+      <center>
+        <h1 class="page-title">
+
+          →→→→→→→→→→→→→→→→→→→→→→→→→→→→<br />
+          →→→→→→→→→→→→THISWAY→→→→→→→→→→→→<br />
+          →→→→→→→→→→→→→→→→→→→→→→→→→→→→<br />
+        </h1>
+      </center>
+      <div class="menu">
+        <table>
+          <tr>
+            <td><center><p class="menuitem"><a href="#" id="menuitem1" onmouseover="showToolTip(1)" onmouseout="hideToolTip(1)">Summer</a></p></center></td>
+            <td><p class="tooltipitem" id="tooltipitem1">Summer Collection: <i>DESCRIPTION HERE</i></p></td>
+          </tr>
+          <tr>
+            <td><center><p class="menuitem"><a href="#" id="menuitem2" onmouseover="showToolTip(2)" onmouseout="hideToolTip(2)">Spring</a></p></center></td>
+            <td><p class="tooltipitem" id="tooltipitem2">Spring Collection: <i>DESCRIPTION HERE</i></p></td>
+          </tr>
+          <tr>
+            <td><center><p class="menuitem"><a href="#" id="menuitem3" onmouseover="showToolTip(3)" onmouseout="hideToolTip(3)">Winter</a></p></center></td>
+            <td><p class="tooltipitem" id="tooltipitem3">Winter Collection: <i>DESCRIPTION HERE</i></p></td>
+          </tr>
+          <tr>
+            <td><center><p class="menuitem"><a href="#" id="menuitem4" onmouseover="showToolTip(4)" onmouseout="hideToolTip(4)">Fall</a></p></center></td>
+            <td><p class="tooltipitem" id="tooltipitem4">Fall Collection: <i>DESCRIPTION HERE</i></p></td>
+          </tr>
+        </table>
+      </div>
     </header>
     <script>
       function showToolTip(num) {
-        var elementName = "tooltiptext" + num;
-        var tooltip = document.getElementById(elementName);
+        var tooltipitem = "tooltipitem" + num;
+        var menuitemname = "menuitem" + num;
+        var tooltip = document.getElementById(tooltipitem);
+        var menuitem = document.getElementById(menuitemname);
+
         tooltip.style.visibility = "visible";
+        menuitem.className = "animation" + num;
       }
       function hideToolTip(num) {
-        var elementName = "tooltiptext" + num;
-        var tooltip = document.getElementById(elementName);
+        var tooltipitem = "tooltipitem" + num;
+        var menuitemname = "menuitem" + num;
+        var tooltip = document.getElementById(tooltipitem);
+        var menuitem = document.getElementById(menuitemname);
+
         tooltip.style.visibility = "hidden";
+        menuitem.className = "";
       }
     </script>
   </body>
