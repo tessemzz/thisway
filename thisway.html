@@ -19,24 +19,41 @@
       <div class="menu">
         <table>
           <tr>
-            <td><center><p class="menuitem"><a href="#" id="menuitem1" onmouseover="showToolTip(1)" onmouseout="hideToolTip(1)">Summer</a></p></center></td>
-            <td><p class="tooltipitem" id="tooltipitem1">Summer Collection: <i>DESCRIPTION HERE</i></p></td>
+            <td class="menutd"><center><p class="menuitem"><a href="#" id="menuitem1" onmouseover="showToolTip(1)" onmouseout="hideToolTip(1)">Summer</a></p></center></td>
+            <td class="menutd"><p class="tooltipitem" id="tooltipitem1">Summer Collection: <i>DESCRIPTION HERE</i></p></td>
           </tr>
           <tr>
-            <td><center><p class="menuitem"><a href="#" id="menuitem2" onmouseover="showToolTip(2)" onmouseout="hideToolTip(2)">Spring</a></p></center></td>
-            <td><p class="tooltipitem" id="tooltipitem2">Spring Collection: <i>DESCRIPTION HERE</i></p></td>
+            <td class="menutd"><center><p class="menuitem"><a href="#" id="menuitem2" onmouseover="showToolTip(2)" onmouseout="hideToolTip(2)">Spring</a></p></center></td>
+            <td class="menutd"><p class="tooltipitem" id="tooltipitem2">Spring Collection: <i>DESCRIPTION HERE</i></p></td>
           </tr>
           <tr>
-            <td><center><p class="menuitem"><a href="#" id="menuitem3" onmouseover="showToolTip(3)" onmouseout="hideToolTip(3)">Winter</a></p></center></td>
-            <td><p class="tooltipitem" id="tooltipitem3">Winter Collection: <i>DESCRIPTION HERE</i></p></td>
+            <td class="menutd"><center><p class="menuitem"><a href="#" id="menuitem3" onmouseover="showToolTip(3)" onmouseout="hideToolTip(3)">Winter</a></p></center></td>
+            <td class="menutd"><p class="tooltipitem" id="tooltipitem3">Winter Collection: <i>DESCRIPTION HERE</i></p></td>
           </tr>
           <tr>
-            <td><center><p class="menuitem"><a href="#" id="menuitem4" onmouseover="showToolTip(4)" onmouseout="hideToolTip(4)">Fall</a></p></center></td>
-            <td><p class="tooltipitem" id="tooltipitem4">Fall Collection: <i>DESCRIPTION HERE</i></p></td>
+            <td class="menutd"><center><p class="menuitem"><a href="#" id="menuitem4" onmouseover="showToolTip(4)" onmouseout="hideToolTip(4)">Fall</a></p></center></td>
+            <td class="menutd"><p class="tooltipitem" id="tooltipitem4">Fall Collection: <i>DESCRIPTION HERE</i></p></td>
+          </tr>
+        </table>
+      </div>
+      <div class="headerdiv">
+        <table class="headertable">
+          <tr>
+            <td class="headertd"><center><a href="#" onmouseover="highlightHeaderItem(1)" onmouseout="unhighlightHeaderItem(1)" id="headera1">About Us</a></center></td>
+            <td class="headertd"><center><a href="#" onmouseover="highlightHeaderItem(2)" onmouseout="unhighlightHeaderItem(2)" id="headera2">Make A Difference</a></center></td>
+            <td class="headertd"><center><a href="#" onmouseover="highlightHeaderItem(3)" onmouseout="unhighlightHeaderItem(3)" id="headera3">Donate</a></center></td>
+            <td class="headertd"><center><a href="#" onmouseover="highlightHeaderItem(4)" onmouseout="unhighlightHeaderItem(4)" id="headera4">Contact Us</a></center></td>
           </tr>
         </table>
       </div>
     </header>
+    <div class="MainContent">
+      <center><img src="thisway.png" align="middle" /></center>
+    </div>
+    <a href="#">
+      <div class="arrow bounce">
+      </div>
+    </a>
     <script>
       function showToolTip(num) {
         var tooltipitem = "tooltipitem" + num;
@@ -55,6 +72,17 @@
 
         tooltip.style.visibility = "hidden";
         menuitem.className = "";
+      }
+      function highlightHeaderItem(num)
+      {
+        var headeraName = "headera" + num;
+        var headera = document.getElementById(headeraName);
+        headera.className = "headerAnimation";
+      }
+      function unhighlightHeaderItem(num) {
+        var headeraName = "headera" + num;
+        var headera = document.getElementById(headeraName);
+        headera.className = "";
       }
     </script>
   </body>
