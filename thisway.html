@@ -5,6 +5,9 @@
   <link type="text/css" rel="stylesheet" href="thisway.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="jquery.js"></script>
 </head>
 <body>
   <header id="masthead" class="site-header">
@@ -123,41 +126,37 @@
     </div>
   </header>
   <div class="MainContent">
-    <center><img src="thisway.png" align="middle" /></center>
+    <center><img src="thisway.png" align="middle" class="thiswayimg"/></center>
   </div>
-  <a href="#">
-    <div class="arrow bounce">
+  <a href="#bottom" id="hulk">
+    <div class="arrowDn bounce">
     </div>
   </a>
-  <script>
-    function showToolTip(num) {
-      var tooltipitem = "tooltipitem" + num;
-      var menuitemname = "menuitem" + num;
-      var tooltip = document.getElementById(tooltipitem);
-      var menuitem = document.getElementById(menuitemname);
+  <div style="position: absolute; left: 50%; top: 105%; width: 100%;">
+    <div style="position: relative; left: -50%;">
+      <center class="title2">
+        <a href="thisway.html" class="thiswaylink">
+          <h1 class="page-title">
 
-      tooltip.style.visibility = "visible";
-      menuitem.className = "animation" + num;
-    }
-    function hideToolTip(num) {
-      var tooltipitem = "tooltipitem" + num;
-      var menuitemname = "menuitem" + num;
-      var tooltip = document.getElementById(tooltipitem);
-      var menuitem = document.getElementById(menuitemname);
+            →→→→→→→→→→→→→→→→→→→→→→→→→→→→→<br />
+            →→→→→→→→→→→ → THISWAY → →→→→→→→→→→→<br />
+            →→→→→→→→→→→→→→→→→→→→→→→→→→→→→<br />
+          </h1>
+          <br />
+        </a>
+      </center>
+    </div>
+  </div>
 
-      tooltip.style.visibility = "hidden";
-      menuitem.className = "";
-    }
-    function highlightHeaderItem(num) {
-      var headeraName = "headera" + num;
-      var headera = document.getElementById(headeraName);
-      headera.className = "headerAnimation";
-    }
-    function unhighlightHeaderItem(num) {
-      var headeraName = "headera" + num;
-      var headera = document.getElementById(headeraName);
-      headera.className = "";
-    }
-  </script>
+  <div class="footer">
+    <table style="padding-left:49.2%;">
+      <tr style="position: relative;" >
+        <td style="padding-right: 650px;"><a href="#top" id="hulk"><div class="arrowUp bounce"></div></a></td>
+        <td style="padding-right: 25px;"><a href="https://www.twitter.com"><img src="tw.png" class="icon" /></a></td>
+        <td style="padding-right: 25px;"><a href="https://www.facebook.com"><img src="fb.png" class="icon" /></a></td>
+        <td style="padding-right: 25px;"><a href="https://www.instagram.com"><img src="ig.png" class="icon" /></a></td>
+      </tr>
+    </table>
+    </div>
 </body>
 </html>

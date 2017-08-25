@@ -1,10 +1,20 @@
 html {
-  /*border: 0px;
+  border: 0px;
   margin: 0px;
-  padding: 0px;
+  padding: 0px;/*
   background:#E5E0C2;*/
   height: 100%;
   background: linear-gradient(to bottom, #E5E0C2 0%, #c2e5e0 120%);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
 }
 h1 {
   font-family: 'Lato', sans-serif;
@@ -298,24 +308,35 @@ a {
     transform: translateY(-15px);
   }
 }
-.arrow {
+.arrowDn {
   position: fixed;
   bottom: 0;
   left: 50%;
   margin-left: -20px;
   width: 40px;
   height: 40px;
-  background-image: url(arrow.png);
+  background-image: url(arrowDn.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.arrowUp {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 20px;
+  background-image: url(arrowUp.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .bounce {
-  -moz-animation: bounce 3s infinite;
-  -webkit-animation: bounce 3s infinite;
-  animation: bounce 3s infinite;
+  -moz-animation: bounce 5s infinite;
+  -webkit-animation: bounce 5s infinite;
+  animation: bounce 5s infinite;
 }
 
-img {
+.thiswayimg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -323,4 +344,21 @@ img {
   height: 262px;
   margin-top: -131px; /* Half the height */
   margin-left: -200px; /* Half the width */
+}
+.title2 {
+  position:absolute;
+  top:150%;
+  top: 105%;
+  width: 100%;
+}
+.footer {
+  background-color:darkgrey;
+  position:absolute;
+  top: 200%;
+  width: 101%;
+  left: -1px;
+}
+
+.icon {
+
 }
