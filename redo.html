@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>This Way</title>
+  <link type="text/css" rel="stylesheet" href="redo.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+	<div class="titlediv">
+		<p class="title">THIS WAY</p>
+	</div>
+	<span class="open" id="open" onclick="openNav()">COLLECTIONS</span>
+	<div class="sidebardiv" id="sidebardiv">
+		<table class="sidebartable" id="sidebartable" align="center">
+			<tr>
+				<td style="vertical-align: middle;">
+					<span class="close" onclick="closeNav()">CLOSE</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#">Fall</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#">Winter</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#">Spring</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#">Summer</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script>
+		/* Set the width of the side navigation to 250px */
+		function openNav() {
+			document.getElementById("sidebardiv").style.margin  = "0";
+			//document.getElementById("sidebardiv").style.padding = "0 .5% 0 .5%";
+			document.getElementById("sidebartable").style.margin = "auto";
+			document.getElementById("open").style.opacity = "0";
+		}
+
+		/* Set the width of the side navigation to 0 */
+		function closeNav() {
+			document.getElementById("sidebardiv").style.margin = "0 0 0 -200px";
+			//document.getElementById("sidebardiv").style.padding = "0 0 0 0";
+			document.getElementById("sidebartable").style.margin = "0 0 0 -400px";
+			document.getElementById("open").style.opacity = "1";
+		}
+	</script>
+</body>
+</html>
