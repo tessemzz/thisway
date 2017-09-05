@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>This Way: Winter Collection</title>
+  <link type="text/css" rel="stylesheet" href="summer.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+  <header id="masthead" class="site-header">
+    <center>
+      <a href="thisway.html" class="thiswaylink">
+        <h1 class="page-title">
+
+          →→→→→→→→→→→→→→→→→→→→→→→→→→→→→<br />
+          →→→→→→→→→→→ → THISWAY → →→→→→→→→→→→<br />
+          →→→→→→→→→→→→→→→→→→→→→→→→→→→→→<br />
+        </h1>
+        <br />
+      </a>
+    </center>
+    <div class="menu">
+      <table>
+        <tr>
+          <td class="menutd">
+            <center>
+              <p class="menuitem">
+                <a href="summer.html" id="menuitem1" onmouseover="showToolTip(1)" onmouseout="hideToolTip(1)">
+                  Summer
+                </a>
+              </p>
+            </center>
+          </td>
+          <td class="menutd">
+            <p class="tooltipitem" id="tooltipitem1">
+              Summer Collection: <i>DESCRIPTION HERE</i>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="menutd">
+            <center>
+              <p class="menuitem">
+                <a href="spring.html" id="menuitem2" onmouseover="showToolTip(2)" onmouseout="hideToolTip(2)">
+                  Spring
+                </a>
+              </p>
+            </center>
+          </td>
+          <td class="menutd">
+            <p class="tooltipitem" id="tooltipitem2">
+              Spring Collection: <i>DESCRIPTION HERE</i>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="menutd">
+            <center>
+              <p class="menuitem" id="menuspring">
+                <a href="winter.html" id="menuitem3" class="animation3" onmouseover="showToolTip(3)" onmouseout="hideToolTip(3)">
+                  Winter
+                </a>
+              </p>
+            </center>
+          </td>
+          <td class="menutd">
+            <p class="tooltipitem" id="tooltipitem3">
+              Winter Collection: <i>DESCRIPTION HERE</i>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="menutd">
+            <center>
+              <p class="menuitem">
+                <a href="fall.html" id="menuitem4" onmouseover="showToolTip(4)" onmouseout="hideToolTip(4)">
+                  Fall
+                </a>
+              </p>
+            </center>
+          </td>
+          <td class="menutd">
+            <p class="tooltipitem" id="tooltipitem4">
+              Fall Collection: <i>DESCRIPTION HERE</i>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="headerdiv">
+      <table class="headertable">
+        <tr>
+          <td class="headertd">
+            <center>
+              <a href="aboutus.html" onmouseover="highlightHeaderItem(1)" onmouseout="unhighlightHeaderItem(1)" id="headera1">
+                About Us
+              </a>
+            </center>
+          </td>
+          <td class="headertd">
+            <center>
+              <a href="difference.html" onmouseover="highlightHeaderItem(2)" onmouseout="unhighlightHeaderItem(2)" id="headera2">
+                Make A Difference
+              </a>
+            </center>
+          </td>
+          <td class="headertd">
+            <center>
+              <a href="donate.html" onmouseover="highlightHeaderItem(3)" onmouseout="unhighlightHeaderItem(3)" id="headera3">
+                Donate
+              </a>
+            </center>
+          </td>
+          <td class="headertd">
+            <center>
+              <a href="contact.html" onmouseover="highlightHeaderItem(4)" onmouseout="unhighlightHeaderItem(4)" id="headera4">
+                Contact Us
+              </a>
+            </center>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </header>
+  <center class="titleCenter"><h2>WINTER COLLECTION</h2></center>
+  <img src="comingsoon.png" class="comingSoon">
+  <center><p class="comingSoonText">This page is still in the works. Please check back soon.<br /> Thanks.</p></center>
+
+  <script>
+    function showToolTip(num) {
+      var tooltipitem = "tooltipitem" + num;
+      var menuitemname = "menuitem" + num;
+      var tooltip = document.getElementById(tooltipitem);
+      var menuitem = document.getElementById(menuitemname);
+
+      tooltip.style.visibility = "visible";
+      if (num != 3)
+      {
+        menuitem.className = "animation" + num;
+      }
+    }
+    function hideToolTip(num) {
+      var tooltipitem = "tooltipitem" + num;
+      var menuitemname = "menuitem" + num;
+      var tooltip = document.getElementById(tooltipitem);
+      var menuitem = document.getElementById(menuitemname);
+
+      tooltip.style.visibility = "hidden";
+      if (num != 3)
+      {
+        menuitem.className = "";
+      }
+    }
+    function highlightHeaderItem(num) {
+      var headeraName = "headera" + num;
+      var headera = document.getElementById(headeraName);
+      headera.className = "headerAnimation";
+    }
+    function unhighlightHeaderItem(num) {
+      var headeraName = "headera" + num;
+      var headera = document.getElementById(headeraName);
+      headera.className = "";
+    }
+  </script>
+</body>
+</html>
