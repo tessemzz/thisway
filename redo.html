@@ -9,44 +9,111 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
-	<div class="titlediv">
-		<p class="title">THIS WAY</p>
-	</div>
-	<span class="open" id="open" onclick="openNav()">COLLECTIONS</span>
-	<div class="sidebardiv" id="sidebardiv">
-		<table class="sidebartable" id="sidebartable" align="center">
-			<tr>
-				<td style="vertical-align: middle;">
-					<span class="close" onclick="closeNav()">CLOSE</span>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="#">Fall</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="#">Winter</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="#">Spring</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="#">Summer</a>
-				</td>
-			</tr>
-		</table>
-	</div>
+  <div class="titlediv" id="titlediv">
+    <table style="width:100%; height:100%;" align="right">
+      <tr>
+        <td class="opentd">
+          <span class="open" id="open" onclick="openNav()">COLLECTIONS</span>
+        </td>
+        <td>
+          <center><p class="title">THIS WAY</p></center>
+        </td>
+        <td class="donatetd">
+          <center id="dropdowncenter"><span class="open" id="open" onmouseover="showDropdown()" onmouseout="hideDropdown()">DONATIONS</span></center>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="dropdowndiv" id="dropdowndiv" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+    <table class="dropdowntable">
+      <tr>
+        <td>
+          <a href="#">About Us</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Make A Difference</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Donate</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">Contact Us</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="sidebardiv" id="sidebardiv" style="margin: 0px 0px 0px -200px;">
+    <table class="sidebartable" id="sidebartable" align="center" style="margin: 0px 0px 0px -400px;">
+      <tr>
+        <td style="vertical-align:middle">
+          <!--<span class="close" onclick="closeNav()">CLOSE</span>-->
+          <div class="imgcontainer">
+            <img src="img/close.png" class="close" onclick="closeNav()" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align:top;" class="hvr-underline-from-center">
+          <a href="#">Fall</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align:top;" class="hvr-underline-from-center">
+          <a href="#">Winter</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align:top;" class="hvr-underline-from-center">
+          <a href="#">Spring</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align:top;" class="hvr-underline-from-center">
+          <a href="#">Summer</a>
+        </td>
+      </tr>
+    </table>
+  </div>
 	<script>
+    var dropdownvisible = false;
+    window.onload = function () {
+      showDropdown(0);
+    };
+
+    window.onresize = function () {
+      if (dropdownvisible) {
+        showDropdown();
+      }
+    }
+
+    function showDropdown(num) {
+      if (num != 0) {
+        var height = document.getElementById("titlediv").clientHeight;
+        var width = document.getElementById("dropdowncenter").clientWidth;
+        document.getElementById("dropdowndiv").style.top = height + "px";
+        document.getElementById("dropdowndiv").style.width = width + "px";
+        dropdownvisible = true;
+      }
+      else {
+        var width = document.getElementById("dropdowncenter").clientWidth;
+        document.getElementById("dropdowndiv").style.width = width + "px";
+        num++;
+      }
+    }
+    function hideDropdown() {
+      document.getElementById("dropdowndiv").style.top = "-10%";
+      dropdownvisible = false;
+    }
+
 		/* Set the width of the side navigation to 250px */
 		function openNav() {
 			document.getElementById("sidebardiv").style.margin  = "0";
-			//document.getElementById("sidebardiv").style.padding = "0 .5% 0 .5%";
 			document.getElementById("sidebartable").style.margin = "auto";
 			document.getElementById("open").style.opacity = "0";
 		}
@@ -54,7 +121,6 @@
 		/* Set the width of the side navigation to 0 */
 		function closeNav() {
 			document.getElementById("sidebardiv").style.margin = "0 0 0 -200px";
-			//document.getElementById("sidebardiv").style.padding = "0 0 0 0";
 			document.getElementById("sidebartable").style.margin = "0 0 0 -400px";
 			document.getElementById("open").style.opacity = "1";
 		}
