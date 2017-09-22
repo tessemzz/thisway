@@ -1,8 +1,18 @@
 var dropdownvisible = false;
+var pageWidth1 = $(window).width();   // returns width of browser viewport
+var pageHeight1 = $(window).height();   // returns height of browser viewport
+
+var sideBarWidth = 0;
+
+var seasonSep = 0;
+
+//var pageHeight2 = $(document).height(); // returns height of HTML document (same as pageHeight in screenshot)
+//var pageWidth2 = $(document).width(); // returns width of HTML document (same as pageWidth in screenshot)
 
 window.onload = function() {
     showDropdown(0);
     fadePhotosIn();
+    initSeasons();
 };
 
 window.onresize = function() {
@@ -59,7 +69,7 @@ function showDropdown(num) {
 }
 
 function hideDropdown() {
-    document.getElementById("dropdowndiv").style.top = "-10%";
+    document.getElementById("dropdowndiv").style.top = "-11%";
     dropdownvisible = false;
 }
 
@@ -151,4 +161,39 @@ function hoverOffClose() {
     var close = document.getElementById("aboutUsClose");
 
     close.style.color = "black";
+}
+
+function initSeasons() {
+  var season1 = document.getElementById("season1");
+  var season2 = document.getElementById("season2");
+  var season3 = document.getElementById("season3");
+  var season4 = document.getElementById("season4");
+
+  var height = document.getElementById("titlediv").clientHeight;
+  sideBarWidth = document.getElementById("sidebardiv").clientWidth;
+
+  season1.style.width = (pageWidth1 - sideBarWidth) + "px";
+  season1.style.height = pageHeight1 + "px";
+  season1.style.top = height + "px";
+  season1.style.left = ((pageWidth1 - sideBarWidth) * -1) + "px";
+
+  seasonSep = season1.style.width / 4;
+
+  season2.style.width = season1.style.width - seasonSep;
+  season3.style.width = season1.style.width - (seasonSep * 2);
+  season4.style.width = season1.style.width - (seasonSep * 3);
+
+  season2.style.left = (pageWidth1 * -1) + "px";
+  season3.style.left = (pageWidth1 * -1) + "px";
+  season4.style.left = (pageWidth1 * -1) + "px";
+}
+
+function openSeason() {
+  var x = document.getElementById("season1");
+  var leftStr = sideBarWidth + "px";
+
+  $("#season1").animate({
+    left: leftStr
+  }, 1000, function () {});
+
 }

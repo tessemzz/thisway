@@ -13,7 +13,7 @@ html {
     width: 100%;
     display: table;
     position: fixed;
-    z-index: 1;
+    z-index: 1001;
     text-align: center;
     transition: 0.5s;
     border-bottom: 1px solid #b4b4b4;
@@ -92,12 +92,13 @@ html {
 .dropdowndiv {
     background-color: white;
     position: relative;
-    z-index: 0;
+    z-index: 1000;
     float: right;
-    top: -10%;
+    top: -11%;
     width: 10%;
     height: 20%;
     transition: 0.5s;
+    border: 1px solid black;
 }
 
 .dropdowntable {
@@ -187,6 +188,40 @@ a {
     margin: 10px 0 0 0;
     cursor: default;
 }
+
+.season1 {
+  background-color:red;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 20px;
+  z-index:100;
+}
+.season2 {
+  background-color:orange;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 20px;
+  z-index:100;
+}
+.season3 {
+  background-color:green;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 20px;
+  z-index:100;
+}
+.season4 {
+  background-color:blue;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 20px;
+  z-index:100;
+}
+
 
 
 /* Underline From Center */
