@@ -190,38 +190,80 @@ a {
 }
 
 .season1 {
-  background-color:red;
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  top: 20px;
-  z-index:100;
-}
-.season2 {
-  background-color:orange;
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  top: 20px;
-  z-index:100;
-}
-.season3 {
-  background-color:green;
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  top: 20px;
-  z-index:100;
-}
-.season4 {
-  background-color:blue;
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  top: 20px;
-  z-index:100;
+    background-color: #086278;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 20px;
+    z-index: 100;
 }
 
+.season2 {
+    background-color: #AFAD3C;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+}
+
+.season3 {
+    background-color: #D75F1B;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+}
+
+.season4 {
+    background-color: #F2A420;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+}
+
+.img1 {
+    left: 0px;
+    top: 83px;
+    z-index: 199;
+    background-color: red;
+    height: 63%;
+    width: 20%;
+    position: absolute;
+}
+
+.img2 {
+    left: 150px;
+    top: 297px;
+    z-index: 198;
+    background-color: blue;
+    height: 54%;
+    width: 40%;
+    position: absolute;
+}
+
+.img3 {
+    left: 574px;
+    top: 142px;
+    z-index: 197;
+    background-color: green;
+    height: 57%;
+    width: 40%;
+    position: absolute;
+}
+
+.img4 {
+    left: 827px;
+    top: 259px;
+    z-index: 196;
+    background-color: yellow;
+    height: 54%;
+    width: 40%;
+    position: absolute;
+}
 
 
 /* Underline From Center */
