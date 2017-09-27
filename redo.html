@@ -31,8 +31,8 @@
     <div class="dropdowndiv" id="dropdowndiv" onmouseover="showDropdown()" onmouseout="hideDropdown()">
         <table class="dropdowntable">
             <tr>
-                <td>
-                    <a style="cursor: pointer" onclick="openAboutUs();">
+                <td style="cursor: pointer" onclick="openAboutUs();">
+                    <a>
                       About Us
                     </a>
                 </td>
@@ -66,22 +66,22 @@
             </tr>
             <tr>
                 <td style="vertical-align:top;" class="hvr-underline-from-center1">
-                    <a style="letter-spacing: 5px; padding-left: 5px;cursor: pointer;" onclick="openSeason();">Fall</a>
+                    <a style="letter-spacing: 5px; padding-left: 5px;cursor: pointer;" onclick="openSeason('fall');">Fall</a>
                 </td>
             </tr>
             <tr>
                 <td style="vertical-align:top;" class="hvr-underline-from-center2">
-                    <a href="#">Winter</a>
+                    <a style="cursor: pointer;" onclick="openSeason('winter');">Winter</a>
                 </td>
             </tr>
             <tr>
                 <td style="vertical-align:top;" class="hvr-underline-from-center3">
-                    <a href="#">Spring</a>
+                    <a style="cursor: pointer;" onclick="openSeason('spring');">Spring</a>
                 </td>
             </tr>
             <tr>
                 <td style="vertical-align:top;" class="hvr-underline-from-center4">
-                    <a href="#">Summer</a>
+                    <a style="cursor: pointer;" onclick="openSeason('summer');">Summer</a>
                 </td>
             </tr>
         </table>
@@ -101,13 +101,13 @@
     </div>
     <div class="season1" id="season1"></div>
     <div class="season2" id="season2"></div>
-    <div class="season3" id="season3"></div> 
+    <div class="season3" id="season3"></div>
     <div class="season4" id="season4"></div>
 
-    <img src="img/photos/IMG_0546.JPG" class="hvr-pulse" id="photo1" style="width: 20%;left:   0px;top: -17px;z-index: 99;opacity: 0;" />
-    <img src="img/photos/IMG_0551.JPG" class="hvr-pulse" id="photo2" style="width: 40%;left: 150px;top: 197px;z-index: 98;opacity: 0;" />
-    <img src="img/photos/IMG_0496.JPG" class="hvr-pulse" id="photo3" style="width: 40%;left: 574px;top:  42px;z-index: 97;opacity: 0;" />
-    <img src="img/photos/IMG_0552a.JPG" class="hvr-pulse" id="photo4" style="width: 70%;left: 827px;top: 159px;z-index: 96;opacity: 0;" />
+    <img src="img/photos/IMG_0546.JPG" class="hvr-pulse" id="photo1" style="width: 20%;left:   0%;top: -17px;z-index: 99;opacity: 0;" />
+    <img src="img/photos/IMG_0551.JPG" class="hvr-pulse" id="photo2" style="width: 40%;left: 14%;top: 197px;z-index: 98;opacity: 0;" />
+    <img src="img/photos/IMG_0496.JPG" class="hvr-pulse" id="photo3" style="width: 40%;left: 42%;top:  42px;z-index: 97;opacity: 0;" />
+    <img src="img/photos/IMG_0552a.JPG" class="hvr-pulse" id="photo4" style="width: 70%;left: 61%;top: 159px;z-index: 96;opacity: 0;" />
 </body>
 
 </html>
