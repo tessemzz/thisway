@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This Way</title>
+    <link type="text/css" rel="stylesheet" href="redo.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="redo.js"></script>
+</head>
+
+<body>
+    <div class="titlediv" id="titlediv">
+        <table style="width:100%; height:100%;position:relative;z-index:105;border-collapse: collapse; border-spacing: 0;" align="right">
+            <tr>
+                <td class="opentd">
+                    <span class="open" id="open" onclick="openNav()">COLLECTIONS</span>
+                </td>
+                <td>
+                    <center><a href="redo.html" class="hvr-shutter-in-horizontal" id="title">THIS WAY</a></center>
+                </td>
+                <td class="donatetd">
+                    <center id="dropdowncenter"><span class="open" id="open" onmouseover="showDropdown()" onmouseout="hideDropdown()">DONATIONS</span></center>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="dropdowndiv" id="dropdowndiv" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+        <table class="dropdowntable">
+            <tr>
+                <td style="cursor: pointer" onclick="openAboutUs();">
+                    <a>
+                      About Us
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Make A Difference</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Donate</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Contact Us</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="sidebardiv" id="sidebardiv" style="margin: 0px 0px 0px -200px;z-index:1001;">
+        <table class="sidebartable" id="sidebartable" align="center" style="margin: 0px 0px 0px -400px;">
+            <tr>
+                <td style="vertical-align:middle">
+                    <!--<span class="close" onclick="closeNav()">CLOSE</span>-->
+                    <div class="imgcontainer">
+                        <img src="img/close.png" class="close" onclick="closeNav()" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top;" class="hvr-underline-from-center1">
+                    <a style="letter-spacing: 5px; padding-left: 5px;cursor: pointer;" onclick="openSeason('fall');">Fall</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top;" class="hvr-underline-from-center2">
+                    <a style="cursor: pointer;" onclick="openSeason('winter');">Winter</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top;" class="hvr-underline-from-center3">
+                    <a style="cursor: pointer;" onclick="openSeason('spring');">Spring</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top;" class="hvr-underline-from-center4">
+                    <a style="cursor: pointer;" onclick="openSeason('summer');">Summer</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="aboutUsBckgrnd">
+    </div>
+    <div id="aboutUsContainer">
+        <div id="aboutUs">
+            <span class="aboutUsClose" id="aboutUsClose" onclick="closeAboutUs()" onmouseover="hoverOnClose()" onmouseout="hoverOffClose()">
+                &times;
+            </span>
+            <h1 class="aboutUsTitle">
+                ABOUT US
+            </h1>
+        </div>
+    </div>
+    <div class="season1" id="season1"></div>
+    <div class="season2" id="season2"></div>
+    <div class="season3" id="season3"></div>
+    <div class="season4" id="season4"></div>
+
+    <img src="img/photos/IMG_0546.JPG" class="hvr-pulse" id="photo1" style="width: 20%;left:   0%;top: -17px;z-index: 99;opacity: 0;" />
+    <img src="img/photos/IMG_0551.JPG" class="hvr-pulse" id="photo2" style="width: 40%;left: 14%;top: 197px;z-index: 98;opacity: 0;" />
+    <img src="img/photos/IMG_0496.JPG" class="hvr-pulse" id="photo3" style="width: 40%;left: 42%;top:  42px;z-index: 97;opacity: 0;" />
+    <img src="img/photos/IMG_0552a.JPG" class="hvr-pulse" id="photo4" style="width: 70%;left: 61%;top: 159px;z-index: 96;opacity: 0;" />
+</body>
+
+</html>
